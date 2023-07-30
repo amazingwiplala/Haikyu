@@ -192,8 +192,10 @@ class GameViewController: UIViewController {
         //隊名及場地
         LTeamLabel.text = teams[indexL]
         LTeamView.backgroundColor = teamColors[indexL]
+        LTeamLogo.image = UIImage(named: teams[indexL]+"-logo")
         RTeamLabel.text = teams[indexR]
         RTeamView.backgroundColor = teamColors[indexR]
+        RTeamLogo.image = UIImage(named: teams[indexR]+"-logo")
         
         //發球隊
         let serve = Bool.random()
